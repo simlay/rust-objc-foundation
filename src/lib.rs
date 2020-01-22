@@ -17,6 +17,7 @@ pub use self::enumerator::{INSFastEnumeration, NSEnumerator, NSFastEnumerator};
 pub use self::object::{INSObject, NSObject};
 pub use self::string::{INSCopying, INSMutableCopying, INSString, NSString};
 pub use self::value::{INSValue, NSValue};
+pub use self::operation::{INSOperation, NSBlockOperation};
 
 #[link(name = "Foundation", kind = "framework")]
 extern { }
@@ -31,3 +32,4 @@ mod enumerator;
 mod object;
 mod string;
 mod value;
+mod operation;
